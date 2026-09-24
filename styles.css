@@ -1,14 +1,14 @@
 :root {
-  --cream: #f3ede4;
-  --cream-2: #e8ddd0;
-  --sand: #d8c6b3;
-  --taupe: #a98f78;
-  --mocha: #806957;
-  --espresso: #392820;
-  --cocoa: #241a16;
-  --ink: #1e1714;
-  --white: #fffdf9;
-  --line: rgba(57, 40, 32, 0.18);
+  --cream: #f2eee5;
+  --cream-2: #e4ddcf;
+  --sand: #cfc4ae;
+  --taupe: #9d9b86;
+  --mocha: #667565;
+  --espresso: #1f3b2d;
+  --cocoa: #13281f;
+  --ink: #0c1d16;
+  --white: #fffdf8;
+  --line: rgba(31, 59, 45, 0.18);
   --sans: "Inter", Arial, sans-serif;
   --serif: "Cormorant Garamond", Georgia, serif;
   --safe-bottom: max(14px, env(safe-area-inset-bottom));
@@ -97,7 +97,7 @@ button {
   background: rgba(243, 237, 228, 0.88);
   -webkit-backdrop-filter: blur(14px);
   backdrop-filter: blur(14px);
-  border-bottom: 1px solid rgba(57, 40, 32, 0.08);
+  border-bottom: 1px solid rgba(31, 59, 45, 0.08);
 }
 
 .wordmark {
@@ -178,7 +178,7 @@ button {
   background: var(--espresso);
   color: var(--cream);
   border: 1px solid rgba(255,255,255,.06);
-  box-shadow: 0 12px 28px rgba(36, 26, 22, 0.18);
+  box-shadow: 0 12px 28px rgba(19, 40, 31, 0.18);
   font-size: 12px;
   font-weight: 600;
   letter-spacing: 0.16em;
@@ -384,7 +384,7 @@ body.menu-open {
   background: rgba(243, 237, 228, 0.9);
   -webkit-backdrop-filter: blur(14px);
   backdrop-filter: blur(14px);
-  border-bottom: 1px solid rgba(57,40,32,0.08);
+  border-bottom: 1px solid rgba(31, 59, 45,0.08);
 }
 
 .booking-main {
