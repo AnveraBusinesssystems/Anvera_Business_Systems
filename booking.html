@@ -1,0 +1,116 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover" />
+  <meta name="theme-color" content="#f3ede4" />
+  <meta name="description" content="Book a class at LUX Pilates Studio." />
+  <title>Book a Class — LUX Pilates</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,500;1,500&family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body class="booking-page">
+  <header class="booking-header">
+    <a class="wordmark wordmark--dark" href="index.html" aria-label="LUX Pilates home">
+      <span class="wordmark__lux">LUX</span>
+      <span class="wordmark__studio">PILATES</span>
+    </a>
+    <button class="menu-toggle menu-toggle--dark" type="button" aria-label="Open menu" aria-controls="mobileMenu" aria-expanded="false">
+      <span></span><span></span>
+    </button>
+  </header>
+
+  <main class="booking-main">
+    <section class="booking-intro">
+      <p class="eyebrow">RESERVE YOUR SPACE</p>
+      <h1>Book a class.</h1>
+      <p>Choose a day, find your class, and reserve your place.</p>
+    </section>
+
+    <section class="date-strip" aria-label="Choose a day">
+      <button class="date-chip is-active" type="button">
+        <span>WED</span><strong>23</strong>
+      </button>
+      <button class="date-chip" type="button">
+        <span>THU</span><strong>24</strong>
+      </button>
+      <button class="date-chip" type="button">
+        <span>FRI</span><strong>25</strong>
+      </button>
+      <button class="date-chip" type="button">
+        <span>SAT</span><strong>26</strong>
+      </button>
+      <button class="date-chip" type="button">
+        <span>SUN</span><strong>27</strong>
+      </button>
+    </section>
+
+    <section class="schedule" aria-label="Available classes">
+      <div class="schedule-heading">
+        <span>SEPTEMBER 23</span>
+        <span>3 CLASSES</span>
+      </div>
+
+      <article class="class-card">
+        <div class="class-card__time">
+          <strong>7:00</strong><span>AM</span>
+        </div>
+        <div class="class-card__body">
+          <p class="class-card__type">REFORMER</p>
+          <h2>Morning Flow</h2>
+          <p>50 min · All levels</p>
+          <p class="availability">6 spots available</p>
+        </div>
+        <button class="class-card__action" type="button" aria-label="Reserve Morning Flow">→</button>
+      </article>
+
+      <article class="class-card">
+        <div class="class-card__time">
+          <strong>12:00</strong><span>PM</span>
+        </div>
+        <div class="class-card__body">
+          <p class="class-card__type">REFORMER</p>
+          <h2>Core & Control</h2>
+          <p>50 min · Intermediate</p>
+          <p class="availability">3 spots available</p>
+        </div>
+        <button class="class-card__action" type="button" aria-label="Reserve Core and Control">→</button>
+      </article>
+
+      <article class="class-card class-card--waitlist">
+        <div class="class-card__time">
+          <strong>6:30</strong><span>PM</span>
+        </div>
+        <div class="class-card__body">
+          <p class="class-card__type">REFORMER</p>
+          <h2>After Hours</h2>
+          <p>50 min · All levels</p>
+          <p class="availability">Waitlist</p>
+        </div>
+        <button class="class-card__action" type="button" aria-label="Join After Hours waitlist">→</button>
+      </article>
+    </section>
+
+    <p class="booking-disclaimer">Demo schedule — live class availability will connect to the final booking system.</p>
+  </main>
+
+  <aside id="mobileMenu" class="mobile-menu" aria-hidden="true">
+    <div class="mobile-menu__top">
+      <div class="wordmark wordmark--dark" aria-hidden="true">
+        <span class="wordmark__lux">LUX</span>
+        <span class="wordmark__studio">PILATES</span>
+      </div>
+      <button class="menu-close" type="button" aria-label="Close menu">×</button>
+    </div>
+    <nav class="mobile-menu__links" aria-label="Mobile">
+      <a href="index.html">Home</a>
+      <a href="booking.html">Book a class</a>
+    </nav>
+    <p class="mobile-menu__note">Pilates meets fitness.</p>
+  </aside>
+
+  <script src="script.js"></script>
+</body>
+</html>
