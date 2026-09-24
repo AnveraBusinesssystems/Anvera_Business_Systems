@@ -1,0 +1,90 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover" />
+  <meta name="theme-color" content="#f3ede4" />
+  <meta name="description" content="LUX Pilates Studio — movement, elevated." />
+  <title>LUX Pilates Studio</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,500;1,500&family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body class="home-page">
+  <main>
+    <section class="hero" aria-label="LUX Pilates introduction">
+      <video
+        id="heroVideo"
+        class="hero__video"
+        autoplay
+        muted
+        playsinline
+        loop
+        preload="auto"
+        poster=""
+      >
+        <source src="assets/lux-hero.mp4" type="video/mp4" />
+      </video>
+      <div class="hero__veil" aria-hidden="true"></div>
+
+      <header id="siteHeader" class="site-header js-reveal" aria-label="Primary navigation">
+        <a class="wordmark" href="index.html" aria-label="LUX Pilates home">
+          <span class="wordmark__lux">LUX</span>
+          <span class="wordmark__studio">PILATES</span>
+        </a>
+
+        <button class="menu-toggle" type="button" aria-label="Open menu" aria-controls="mobileMenu" aria-expanded="false">
+          <span></span><span></span>
+        </button>
+      </header>
+
+      <div class="hero__caption js-reveal">
+        <span>Movement, elevated.</span>
+      </div>
+
+      <a id="bookingCta" class="booking-cta js-reveal" href="booking.html">
+        <span>BOOK A CLASS</span>
+        <span aria-hidden="true">→</span>
+      </a>
+    </section>
+
+    <section class="statement-section">
+      <p class="eyebrow">LUX PILATES STUDIO</p>
+      <h1>Strength with intention.<br><em>Movement with purpose.</em></h1>
+      <p class="statement-copy">
+        A refined Pilates experience designed to build strength, control and confidence through considered movement.
+      </p>
+    </section>
+
+    <section class="experience-section">
+      <div class="experience-card">
+        <p class="eyebrow">THE LUX EXPERIENCE</p>
+        <h2>Strong body.<br>Strong mind.</h2>
+        <p>
+          Thoughtful programming, focused instruction and an atmosphere made for presence.
+        </p>
+        <a class="text-link" href="booking.html">Explore classes <span>→</span></a>
+      </div>
+    </section>
+  </main>
+
+  <aside id="mobileMenu" class="mobile-menu" aria-hidden="true">
+    <div class="mobile-menu__top">
+      <div class="wordmark wordmark--dark" aria-hidden="true">
+        <span class="wordmark__lux">LUX</span>
+        <span class="wordmark__studio">PILATES</span>
+      </div>
+      <button class="menu-close" type="button" aria-label="Close menu">×</button>
+    </div>
+    <nav class="mobile-menu__links" aria-label="Mobile">
+      <a href="index.html">Home</a>
+      <a href="booking.html">Book a class</a>
+      <a href="#experience">The studio</a>
+    </nav>
+    <p class="mobile-menu__note">Pilates meets fitness.</p>
+  </aside>
+
+  <script src="script.js"></script>
+</body>
+</html>
