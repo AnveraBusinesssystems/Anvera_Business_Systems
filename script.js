@@ -35,12 +35,10 @@
       };
 
       heroVideo.addEventListener("timeupdate", syncReveal);
-
       heroVideo.addEventListener("loadedmetadata", () => {
         if (heroVideo.currentTime >= revealAt) revealUI();
       });
 
-      // Safety fallback if the browser throttles video timeupdate.
       window.setTimeout(revealUI, 6200);
     } else {
       revealUI();
@@ -48,7 +46,7 @@
 
     const updateHeader = () => {
       if (!header) return;
-      header.classList.toggle("is-scrolled", window.scrollY > 42);
+      header.classList.toggle("is-scrolled", window.scrollY > window.innerHeight * 0.72);
     };
 
     window.addEventListener("scroll", updateHeader, { passive: true });
@@ -90,4 +88,27 @@
       chip.classList.add("is-active");
     });
   });
+
+  const revealItems = document.querySelectorAll(".reveal-on-scroll");
+
+  if ("IntersectionObserver" in window && revealItems.length) {
+    const observer = new IntersectionObserver(
+      (entries, instance) => {
+        entries.forEach((entry) => {
+          if (!entry.isIntersecting) return;
+          entry.target.classList.add("is-visible");
+          instance.unobserve(entry.target);
+        });
+      },
+      {
+        root: null,
+        threshold: 0.12,
+        rootMargin: "0px 0px -7% 0px"
+      }
+    );
+
+    revealItems.forEach((item) => observer.observe(item));
+  } else {
+    revealItems.forEach((item) => item.classList.add("is-visible"));
+  }
 })();
