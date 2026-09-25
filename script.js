@@ -2,6 +2,9 @@
   const body = document.body;
   const heroVideo = document.getElementById("heroVideo");
   const header = document.getElementById("siteHeader");
+  const hero = document.querySelector(".hero");
+  const bookingCta = document.getElementById("bookingCta");
+  const footer = document.getElementById("footer");
   const menu = document.getElementById("mobileMenu");
   const menuToggle = document.querySelector(".menu-toggle");
   const menuClose = document.querySelector(".menu-close");
@@ -48,11 +51,20 @@
 
     const updateHeader = () => {
       if (!header) return;
-      header.classList.toggle("is-scrolled", window.scrollY > window.innerHeight * 0.72);
+      const switchPoint = hero ? Math.max(0, hero.offsetHeight - header.offsetHeight) : window.innerHeight * 0.6;
+      header.classList.toggle("is-scrolled", window.scrollY > switchPoint);
     };
 
     window.addEventListener("scroll", updateHeader, { passive: true });
     updateHeader();
+
+    if (bookingCta && footer && "IntersectionObserver" in window) {
+      const footerObserver = new IntersectionObserver(
+        ([entry]) => bookingCta.classList.toggle("is-hidden", entry.isIntersecting),
+        { threshold: 0.08 }
+      );
+      footerObserver.observe(footer);
+    }
   }
 
   function openMenu() {
