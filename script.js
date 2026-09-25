@@ -11,7 +11,7 @@
   const menuBackground = [...body.children].filter(
     (element) => element !== menu && element.tagName !== "SCRIPT"
   );
-  const revealAt = 5.47;
+  const revealAt = 2;
   const sessionKey = "lux-intro-seen";
   let returnFocus = null;
 
@@ -44,7 +44,7 @@
       heroVideo.addEventListener("timeupdate", syncReveal);
       heroVideo.addEventListener("loadedmetadata", syncReveal);
       heroVideo.addEventListener("error", revealUI, { once: true });
-      window.setTimeout(revealUI, 6200);
+      window.setTimeout(revealUI, 2000);
     } else {
       revealUI();
     }
