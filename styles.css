@@ -378,8 +378,8 @@ video {
 }
 
 .editorial-image {
-  width: calc(100% - 28px);
-  margin: 0 14px;
+  width: 100%;
+  margin: 0;
   background-color: var(--cream-2);
   background-repeat: no-repeat;
   background-size: cover;
@@ -1240,9 +1240,9 @@ video {
   }
 
   .editorial-image {
-    width: min(84vw, 1040px);
-    margin-left: auto;
-    margin-right: auto;
+    width: 100%;
+    margin-left: 0;
+    margin-right: 0;
     aspect-ratio: 16 / 10;
   }
 
