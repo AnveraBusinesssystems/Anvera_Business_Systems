@@ -6,6 +6,7 @@
   <meta name="theme-color" content="#f3ede4" />
   <meta name="description" content="Book a class at LUX Pilates Studio." />
   <title>Book a Class — LUX Pilates</title>
+  <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Crect width='64' height='64' fill='%23173b2d'/%3E%3Ctext x='32' y='45' text-anchor='middle' font-family='serif' font-size='44' fill='%23f3efe7'%3EL%3C/text%3E%3C/svg%3E" />
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,500;1,500&family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
@@ -30,30 +31,30 @@
     </section>
 
     <section class="date-strip" aria-label="Choose a day">
-      <button class="date-chip is-active" type="button">
-        <span>WED</span><strong>23</strong>
-      </button>
-      <button class="date-chip" type="button">
-        <span>THU</span><strong>24</strong>
-      </button>
-      <button class="date-chip" type="button">
+      <button class="date-chip is-active" type="button" aria-pressed="true">
         <span>FRI</span><strong>25</strong>
       </button>
-      <button class="date-chip" type="button">
+      <button class="date-chip" type="button" aria-pressed="false">
         <span>SAT</span><strong>26</strong>
       </button>
-      <button class="date-chip" type="button">
+      <button class="date-chip" type="button" aria-pressed="false">
         <span>SUN</span><strong>27</strong>
+      </button>
+      <button class="date-chip" type="button" aria-pressed="false">
+        <span>MON</span><strong>28</strong>
+      </button>
+      <button class="date-chip" type="button" aria-pressed="false">
+        <span>TUE</span><strong>29</strong>
       </button>
     </section>
 
     <section class="schedule" aria-label="Available classes">
       <div class="schedule-heading">
-        <span>SEPTEMBER 23</span>
+        <span>SEPTEMBER 25</span>
         <span>3 CLASSES</span>
       </div>
 
-      <article class="class-card">
+      <article class="class-card" data-class-card>
         <div class="class-card__time">
           <strong>7:00</strong><span>AM</span>
         </div>
@@ -66,7 +67,7 @@
         <button class="class-card__action" type="button" aria-label="Reserve Morning Flow">→</button>
       </article>
 
-      <article class="class-card">
+      <article class="class-card" data-class-card>
         <div class="class-card__time">
           <strong>12:00</strong><span>PM</span>
         </div>
@@ -79,7 +80,7 @@
         <button class="class-card__action" type="button" aria-label="Reserve Core and Control">→</button>
       </article>
 
-      <article class="class-card class-card--waitlist">
+      <article class="class-card class-card--waitlist" data-class-card>
         <div class="class-card__time">
           <strong>6:30</strong><span>PM</span>
         </div>
@@ -96,7 +97,36 @@
     <p class="booking-disclaimer">Demo schedule — live class availability will connect to the final booking system.</p>
   </main>
 
-  <aside id="mobileMenu" class="mobile-menu" aria-hidden="true">
+  <div id="bookingSheet" class="booking-sheet" aria-hidden="true" hidden>
+    <button class="booking-sheet__backdrop" type="button" aria-label="Close booking details"></button>
+    <section
+      class="booking-sheet__panel"
+      role="dialog"
+      aria-modal="true"
+      aria-labelledby="bookingSheetTitle"
+    >
+      <button class="booking-sheet__close" type="button" aria-label="Close booking details">×</button>
+
+      <div class="booking-sheet__selection" data-booking-selection>
+        <p class="eyebrow">YOUR CLASS</p>
+        <p class="booking-sheet__date" data-booking-date></p>
+        <h2 id="bookingSheetTitle" data-booking-title></h2>
+        <p class="booking-sheet__meta" data-booking-meta></p>
+        <p class="booking-sheet__availability" data-booking-availability></p>
+        <button class="booking-sheet__reserve" type="button" data-booking-reserve>RESERVE SPOT <span aria-hidden="true">→</span></button>
+      </div>
+
+      <div class="booking-sheet__confirmation" data-booking-confirmation hidden>
+        <p class="booking-sheet__check" aria-hidden="true">✓</p>
+        <p class="eyebrow">DEMO CONFIRMATION</p>
+        <h2 data-confirmation-title>Your spot is reserved.</h2>
+        <p data-confirmation-copy>This demo reservation has been confirmed.</p>
+        <button class="booking-sheet__done" type="button" data-booking-done>DONE</button>
+      </div>
+    </section>
+  </div>
+
+  <aside id="mobileMenu" class="mobile-menu" aria-hidden="true" inert>
     <div class="mobile-menu__top">
       <div class="wordmark wordmark--dark" aria-hidden="true">
         <span class="wordmark__lux">LUX</span>
