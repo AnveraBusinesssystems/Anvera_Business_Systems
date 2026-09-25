@@ -324,8 +324,8 @@ video {
   display: flex;
   flex-direction: column;
   justify-content: center;
-  padding-top: 96px;
-  padding-bottom: 96px;
+  padding-top: 52px;
+  padding-bottom: 82px;
 }
 
 .brand-manifesto h1,
@@ -403,8 +403,8 @@ video {
 }
 
 .intro-copy {
-  padding-top: 74px;
-  padding-bottom: 84px;
+  padding-top: 64px;
+  padding-bottom: 72px;
 }
 
 .intro-copy h2,
@@ -440,8 +440,8 @@ video {
 }
 
 .class-section {
-  padding-top: 82px;
-  padding-bottom: 82px;
+  padding-top: 70px;
+  padding-bottom: 72px;
   color: var(--cream);
   background: var(--forest);
 }
@@ -451,7 +451,7 @@ video {
 }
 
 .class-section__header {
-  padding-bottom: 48px;
+  padding-bottom: 40px;
 }
 
 .class-section__header > p:not(.eyebrow) {
@@ -542,8 +542,8 @@ video {
 }
 
 .lux-values {
-  padding-top: 92px;
-  padding-bottom: 96px;
+  padding-top: 72px;
+  padding-bottom: 80px;
 }
 
 .lux-values h2 em {
@@ -551,7 +551,7 @@ video {
 }
 
 .lux-values__statement {
-  margin-top: 48px;
+  margin-top: 36px;
   display: grid;
   grid-template-columns: 46px 1fr;
   gap: 18px;
@@ -573,13 +573,13 @@ video {
 }
 
 .closing-cta {
-  padding-top: 84px;
-  padding-bottom: 112px;
+  padding-top: 70px;
+  padding-bottom: 92px;
 }
 
 .site-footer {
   padding:
-    72px
+    62px
     23px
     calc(42px + env(safe-area-inset-bottom));
   color: var(--cream);
@@ -627,7 +627,7 @@ video {
 }
 
 .site-footer__grid {
-  margin-top: 68px;
+  margin-top: 54px;
   padding-top: 32px;
   display: grid;
   grid-template-columns: repeat(2, minmax(0, 1fr));
@@ -663,7 +663,7 @@ video {
 }
 
 .site-footer__bottom {
-  margin-top: 68px;
+  margin-top: 54px;
   padding-top: 20px;
   display: flex;
   justify-content: space-between;
