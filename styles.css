@@ -245,6 +245,12 @@ video {
   padding-right: 23px;
 }
 
+#about,
+#classes,
+#first-visit {
+  scroll-margin-top: 82px;
+}
+
 .eyebrow {
   margin: 0 0 18px;
   color: var(--sage);
@@ -622,11 +628,11 @@ video {
 }
 
 .mobile-menu__links a {
-  padding: 7px 0;
+  padding: 5px 0;
   font-family: var(--serif);
-  font-size: clamp(54px, 16vw, 82px);
-  line-height: 0.9;
-  letter-spacing: -0.05em;
+  font-size: clamp(43px, 12vw, 66px);
+  line-height: 0.92;
+  letter-spacing: -0.045em;
 }
 
 .mobile-menu__footer {
