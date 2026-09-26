@@ -143,29 +143,29 @@
 
   const demoClasses = [
     [
-      ["7:00", "AM", "REFORMER", "Morning Flow", "50 min", "All levels", "6 spots available", "reserve"],
-      ["12:00", "PM", "REFORMER", "Core & Control", "50 min", "Intermediate", "3 spots available", "reserve"],
-      ["6:30", "PM", "REFORMER", "After Hours", "50 min", "All levels", "Waitlist", "waitlist"]
+      ["7:00", "AM", "MAT", "Morning Flow", "50 min", "All levels", "6 spots available", "reserve"],
+      ["12:00", "PM", "MAT", "Core & Control", "50 min", "Intermediate", "3 spots available", "reserve"],
+      ["6:30", "PM", "MAT", "After Hours", "50 min", "All levels", "Waitlist", "waitlist"]
     ],
     [
-      ["8:00", "AM", "REFORMER", "Essential Flow", "50 min", "All levels", "4 spots available", "reserve"],
+      ["8:00", "AM", "MAT", "Essential Flow", "50 min", "All levels", "4 spots available", "reserve"],
       ["12:30", "PM", "SCULPT", "LUX Sculpt", "45 min", "All levels", "2 spots available", "reserve"],
-      ["5:30", "PM", "REFORMER", "Evening Reset", "50 min", "All levels", "5 spots available", "reserve"]
+      ["5:30", "PM", "MAT", "Evening Reset", "50 min", "All levels", "5 spots available", "reserve"]
     ],
     [
-      ["7:30", "AM", "REFORMER", "Morning Flow", "50 min", "All levels", "3 spots available", "reserve"],
-      ["11:00", "AM", "REFORMER", "Core & Control", "50 min", "Intermediate", "Waitlist", "waitlist"],
+      ["7:30", "AM", "MAT", "Morning Flow", "50 min", "All levels", "3 spots available", "reserve"],
+      ["11:00", "AM", "MAT", "Core & Control", "50 min", "Intermediate", "Waitlist", "waitlist"],
       ["6:00", "PM", "SCULPT", "Friday Sculpt", "45 min", "All levels", "4 spots available", "reserve"]
     ],
     [
-      ["9:00", "AM", "REFORMER", "Weekend Flow", "50 min", "All levels", "2 spots available", "reserve"],
-      ["10:30", "AM", "REFORMER", "Core & Control", "50 min", "Intermediate", "4 spots available", "reserve"],
+      ["9:00", "AM", "MAT", "Weekend Flow", "50 min", "All levels", "2 spots available", "reserve"],
+      ["10:30", "AM", "MAT", "Core & Control", "50 min", "Intermediate", "4 spots available", "reserve"],
       ["12:00", "PM", "PRIVATE", "Private Session", "50 min", "Personalized", "1 spot available", "reserve"]
     ],
     [
-      ["9:30", "AM", "REFORMER", "Sunday Reset", "50 min", "All levels", "5 spots available", "reserve"],
+      ["9:30", "AM", "MAT", "Sunday Reset", "50 min", "All levels", "5 spots available", "reserve"],
       ["11:00", "AM", "SCULPT", "LUX Sculpt", "45 min", "All levels", "3 spots available", "reserve"],
-      ["4:30", "PM", "REFORMER", "Slow Flow", "50 min", "All levels", "Waitlist", "waitlist"]
+      ["4:30", "PM", "MAT", "Slow Flow", "50 min", "All levels", "Waitlist", "waitlist"]
     ]
   ];
 
